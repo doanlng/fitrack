@@ -43,3 +43,8 @@ class WorkoutExercise(models.Model):
 
     def __str__(self):
         return f"{self.exercise.name} - Workout {self.workout.id}"
+
+""" class CustomUser(AbstractUser):
+    emails = models.EmailField(unique=True, blank=False, null=False)
+    USERNAME_FIELD = 'username'
+    EMAIL_FIELD = 'email' """
